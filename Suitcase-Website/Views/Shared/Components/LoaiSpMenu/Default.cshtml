@@ -8,7 +8,9 @@
         <ul>
             @foreach(var item in Model)
             {
-                <li><a href="#">@item.Loai</a></li>
+                <li><a asp-controller ="Home" asp-action ="SanPhamTheoLoai"
+                asp-route-maloai = "@item.MaLoai"
+                >@item.Loai</a></li>
             }
         </ul>
     </div>
